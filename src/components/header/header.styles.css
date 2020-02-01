@@ -1,0 +1,12 @@
+.header {
+	height: 70px;
+	font-family: "Noto Sans TC", sans-serif;
+	padding-top: 30px;
+	display: flex;
+	opacity: 0.7;
+}
+
+h1 {
+	margin: auto;
+	color: #1b262c;
+}
