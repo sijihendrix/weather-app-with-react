@@ -4,12 +4,31 @@ import "./homepage.styles.css";
 import CustomButton from "../custom-button/custom-button.component";
 
 class Home extends React.Component {
+	constructor(props){
+		super(props);
+		this.state={
+			location:""
+		}
+
+		
+	}
+	handleSearch = (e)=> {
+		const text = e.target.value;
+		this.setState({
+			location: text
+		})	
+	}
+
+	handleSubmit = () => {
+		console.log(this.state.location);
+		
+	}
 	render() {
 		return (
 			<div className="home">
 				<div className="background-image">
-					<SearchBar />
-					<CustomButton />
+					<SearchBar handleSearch={this.handleSearch} />
+					<CustomButton handleSubmit={this.handleSubmit} />
 				</div>
 			</div>
 		);
