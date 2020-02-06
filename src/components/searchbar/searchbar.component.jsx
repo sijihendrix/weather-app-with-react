@@ -2,10 +2,10 @@ import React from "react";
 
 import "./searchbar.styles.css";
 
-export const SearchBar = (props) => (
-<
- input type="text" 
- className="search"
- onChange={props.handleSearch} />);
+const SearchBar = props => {
+	const { handleSearch } = props;
+
+	return <input type="text" className="search" onChange={handleSearch} />;
+};
 
 export default SearchBar;
