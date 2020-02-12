@@ -5,8 +5,16 @@
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .home {
 	height: 100vh;
+}
+
+.circularProgress {
+	display: "block";
+	width: "40%";
+	margin: "0 auto";
+	marginTop: "10px";
 }
